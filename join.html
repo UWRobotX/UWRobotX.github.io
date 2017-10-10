@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<title>UW Robot X</title>
+		<meta name="description" content="">
+		<meta name="author" content="">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<link href="//fonts.googleapis.com/css?family=Source+Serif+Pro|Nunito+Sans:200,300,400" rel="stylesheet" type="text/css">
+
+		<link rel="stylesheet" href="/lib/css/normalize.css">
+		<!--	<link rel="stylesheet" href="/lib/css/skeleton.css">-->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+		<link rel="stylesheet" href="/css/index.css">
+
+		<link rel="icon" type="image/png" href="/images/favicon.png">
+
+	</head>
+
+	<body>
+		<!-- Begin Navbar -->
+		<div id="top-nav-wrapper">
+			<script type="text/javascript">
+				function mobileDisplayNav() {
+					var navbar = document.querySelector("nav");
+					if (navbar.className === "top-nav") {
+						navbar.className += " responsive";
+					} else {
+						navbar.className = "top-nav";
+					}
+				}
+			</script>
+			<nav class="top-nav" id="top-nav">
+				<!--			<div>-->
+				<a href="javascript:void(0);" class="icon" onclick="mobileDisplayNav()" style="z-index: 10;">&#9776;</a>
+				<a href="/index.html" id="home-link-nav">UWRX</a>
+				<div style="float: right">
+					<a href="/about.html">About</a>
+					<!--				<a href="#news">News</a>-->
+					<a href="/join.html">Join UW RobotX</a>
+				</div>
+				<!--			</div>-->
+			</nav>
+		</div>
+		<!-- End navbar -->
+
+		<div class="section">
+			<div class="container">
+				<h1>Join UW RobotX</h1>
+				<p>
+					We're looking to build a team of students who are excited about robotics and want to learn more about building autonomous vehicles.	If you're interested in working on challenging engineering problems and helping establish a team from the ground up, then UW RobotX is a good fit for you.
+				</p>
+				<p>
+					We expect that as a team member, you will have the opportunity to:
+				</p>
+				<ul>
+					<li>Help develop long-term plans and break them down into measurable, short-term deliverables</li>
+					<li>Take ownership of specific components on the vehicle and see through their development, from requirements specification to implementation, integration, and verification</li>
+					<li>Engage with other students and sponsors to build the team</li>
+					<li>Develop your technical skills and apply them to solve real-world tasks</li>
+				</ul>
+				<p>The time commitment is variable, but we expect that in order to successfully compete in the 2018 Maritime RobotX challenge, team members would need to be willing to spend around 10 hours per week working on the project.</p>
+				<div class="row">
+					<h2 class="section-heading">Areas of Expertise</h2>	
+					<p>
+						Building an autonomous vehicle pulls from many disciplines. We're looking for students with experience in computer, electrical, and mechanical engineering who have an interest in work such as:
+					</p>
+					<ul>
+						<li>Developing software packages for sensor fusion, SLAM, and motion planning using de-facto standard robotics tools and frameworks</li>
+						<li>Designing power systems and integrating sensors/actuators with other vehicle subsystems</li>
+						<li>Designing radio communication and underwater SONAR sensing systems</li>
+						<li>Designing propulsion systems and other mechanical subsystems to house sensors and support competition tasks</li>
+					</ul>
+				</div>
+				<div class="row">
+					<h2 class="section-heading">UW RobotX Application</h2>
+					<div class="col-sm-6">
+						<form action="https://formspree.io/uwrobotx@gmail.com" method="POST">
+							<div class="form-group">
+								<label for="prospective-member-name">Name</label>
+								<input type="text" class="form-control" id="prospective-member-name" name="prospective-member-email" placeholder="Enter name" required>
+							</div>
+							<div class="form-group">
+								<label for="prospective-member-email">Email address</label>
+								<input type="email" class="form-control" id="prospective-member-email" name="prospective-member-email" placeholder="Enter email" required>
+							</div>
+							<div class="form-group">
+								<label for="prospective-member-major">Major</label>
+								<input type="text" class="form-control" id="prospective-member-major" name="prospective-member-major" placeholder="Enter major" required>
+							</div>
+							<div class="form-group">
+								<label for="prospective-member-year">Where are you in your education?</label>
+								<select class="form-control" id="prospective-member-year" name="prospective-member-year" required>
+									<option>Freshman</option>
+									<option>Sophomore</option>
+									<option>Junior</option>
+									<option>Senior</option>
+									<option>Graduate</option>
+								</select>
+							</div>
+							<div class="form-group">
+								<label for="prospective-member-why">Tell us about yourself!</label>
+								<textarea class="form-control" id="prospective-member-why" name="prospective-member-why" rows="6" placeholder="Summarize any relevant experience you have. What kinds of things would you like to work on in RobotX, and what can you bring to the team? This does not need to be long - feel free to explain as much as you see fit."></textarea>
+							</div>
+							<button type="submit" class="btn btn-secondary">Submit</button>
+						</form>
+					</div>
+					<div class="col-sm-6">
+						<p>We will follow up on your application within a week of applying. If we think you might be a good fit for this project, we'll find a time to meet you in person and work from there.</p>
+						<p style="color: #555; font-style: italic; padding-top: 1rem;">
+							Due to the fact that we are competing in the 2018 Maritime RobotX challenge for the first time, we are currently seeking students who already have at least 1 year of experience in their major or otherwise related work.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Footer
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+		<div id="footer">
+		</div>
+	</body>
+
+</html>

@@ -1,0 +1,53 @@
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-align: center;
+}
+
+.section {
+    height: 100vh;
+    background-color: black;
+    width: 100%;
+    padding-top: 5%;
+}
+
+.section {
+    background-color: white;
+}
+
+.section#flagship {
+    position: relative;
+
+    background-image: url("/img/landing-inked.jpg"); /* Image courtesy of unsplash */
+    height: 85%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    -webkit-filter: brightness(85%);
+    -moz-filter: brightness(85%);
+    -o-filter: brightness(85%);
+    -ms-filter: brightness(85%);
+    filter: brightness(85%);
+}
+
+.section#flagship h1 {
+    color: rgba(1, 67, 90, 1);
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.container h1 {
+    color: rgb(0, 77, 112);
+    padding-bottom: 5pt;
+}
+
+.container p {
+    font-size: 13pt;
+}

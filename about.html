@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<title>UW Robot X</title>
+		<meta name="description" content="">
+		<meta name="author" content="">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<link href="//fonts.googleapis.com/css?family=Source+Serif+Pro|Nunito+Sans:200,300,400" rel="stylesheet" type="text/css">
+
+		<link rel="stylesheet" href="/lib/css/normalize.css">
+		<!--	<link rel="stylesheet" href="/lib/css/skeleton.css">-->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+		<link rel="stylesheet" href="/css/index.css">
+
+		<link rel="icon" type="image/png" href="/images/favicon.png">
+
+	</head>
+
+	<body>
+		<!-- Begin Navbar -->
+		<div id="top-nav-wrapper">
+			<script type="text/javascript">
+				function mobileDisplayNav() {
+					var navbar = document.querySelector("nav");
+					if (navbar.className === "top-nav") {
+						navbar.className += " responsive";
+					} else {
+						navbar.className = "top-nav";
+					}
+				}
+			</script>
+			<nav class="top-nav" id="top-nav">
+				<!--			<div>-->
+				<a href="javascript:void(0);" class="icon" onclick="mobileDisplayNav()" style="z-index: 10;">&#9776;</a>
+				<a href="/index.html" id="home-link-nav">UWRX</a>
+				<div style="float: right">
+					<a href="/about.html">About</a>
+					<!--				<a href="#news">News</a>-->
+					<a href="/join.html">Join UW RobotX</a>
+				</div>
+				<!--			</div>-->
+			</nav>
+		</div>
+		<!-- End navbar -->
+
+		<div class="section">
+			<div class="container">
+				<h1>About</h1>
+				<h2 class="section-heading">Competition Task Overview</h2>
+				<p>
+					RobotX revolves around taking a standard boat, the Wave Adaptive Modular Vessel (WAM-V), and building the hardware and software necessary to make it capable of autonomous operation. The boat's autonomous sensing and navigation capabilities will be tested via a series of tasks both on the surface and underwater.
+				</p>
+				<p>
+					In the 2016 competition, there were a total of eight tasks that the  vehicle needed to perform to succeed:
+				</p>
+				<h4 class="section-heading" >Demonstrate Navigation and Control</h4>
+				<p>
+					<img src="/img/DemonstrateNavigationAndControl.PNG" style="margin-right: 2rem; margin-bottom: 0.5rem; vertical-align: top; float:left; overflow: hidden" height="225px" width="383px"/>
+					Teams must be able to show that their WAM-V boat can at least detect track edge markers (the red and green buoys) and successfully move from a starting gate to an ending gate. The boat must not receive any human/remote control input during this task.
+				</p>
+				<h4 class="section-heading" style="clear: both;">Find Totems and Avoid Obstacles</h4>
+				<p>
+					<img src="/img/FindTotemsAndAvoidObstacles.PNG" style="margin-right: 2rem; margin-bottom: 0.5rem; vertical-align: top; float:left; overflow: hidden" height="225px" width="383px"/>
+					Teams must be able to navigate through an area that is littered with floating obstacles of varying sizes. Somewhere inside this area are colored buoys ("totems"); it's the job of the boat to find these and circle them, all while avoiding anything else in its path.<br/>The exact colors of the buoys to circle, the order in which to circle them, and the direction in which to circle them (clockwise or counter-clockwise) is not known until the day of the run.
+				</p>
+				<h4 class="section-heading" style="clear: both;">Identify Symbols and Dock</h4>
+				<p>
+					<img src="/img/IdentifySymbolsAndDock2.PNG" style="margin-right: 2rem; margin-bottom: 0.5rem; vertical-align: top; float:left; overflow: hidden" height="225px" width="383px"/>
+					The boat must be capable of docking into a specific station during the competition. The boat shall be assigned a sequence of docks, each designated by a specific shape and color. The boat must autonomously find each bay and dock in them in the sequence specified to complete the challenge successfully.
+				</p>
+				<h4 class="section-heading" style="clear: both;">Scan the Code</h4>
+				<p>
+					<img src="/img/ScanTheCode.PNG" style="margin-right: 2rem; margin-bottom: 0.5rem; vertical-align: top; float:left; overflow: hidden" height="225px" width="383px"/>
+					In this task, the boat must search for a buoy that flashes a pattern of colored lights. It must correctly identify the pattern of lights for that run and autonomously report them back to the team.
+				</p>
+				<h4 class="section-heading" style="clear: both;">Underwater Shape Identification</h4>
+				<p>
+					<img src="/img/UnderwaterShapeIdentification.PNG" style="margin-right: 2rem; margin-bottom: 0.5rem; vertical-align: top; float:left; overflow: hidden" height="225px" width="383px"/>
+					The WAM-V will be responsible for finding shapes located on the sea floor. During the competition, the boat will be assigned a set of quadrants to search for objects in relative to a central buoy in the task area. The boat will have to navigate to those quadrants and report the underwater shapes located in each quadrant.
+				</p>
+				<h4 class="section-heading" style="clear: both;">Find the Break</h4>
+				<p>
+					<img src="/img/FindTheBreak.PNG" style="margin-right: 2rem; margin-bottom: 0.5rem; vertical-align: top; float:left; overflow: hidden" width="383px"/>
+					In this challenge, the WAM-V must navigate to a designated path, marked via a series of underwater orange marker segments. The orange segments are divided by two yellow markers, and the length of the path as the number of orange markers between the two yellow dividers must be autonomously identified and reported back to the team.
+				</p>
+				<h4 class="section-heading" style="clear: both;">Detect and Deliver</h4>
+				<p>
+					<img src="/img/DetectAndDeliver.PNG" style="margin-right: 2rem; margin-bottom: 0.5rem; vertical-align: top; float:left; overflow: hidden" width="383px"/>
+					The WAM-V must be capable of delivering objects to a target location. In this task, the boat is given 4 balls, and it must navigate to an assigned target face of a buoy (marked by a specific shape) and place as many of its 4 balls as possible into either of the 2 target holes on that face. More points are given for placing balls into the smaller of the 2 holes. 
+				</p>
+				<h4 class="section-heading" style="clear: both;">Acoustic Pinger-Based Transit</h4>
+				<p>
+					<img src="/img/AcousticPingerBasedTransit.PNG" style="margin-right: 2rem; margin-bottom: 0.5rem; vertical-align: top; float:left; overflow: hidden" width="383px"/>
+					The WAM-V must successfully route through a designated entry gate, circle around a black buoy, and then exit through a designated exit gate to complete this task. The entry and exit gates are uniquely-colored sets of buoys; the assigned gates will be marked through underwater acoustic pingers that the WAM-V must sense. Frequencies of these pingers will be assigned during the run.
+				</p>
+				<aside style="clear: both; padding: 2rem 0;"><em>The images depicting each task, as well as more detailed challenge descriptions, can be located <a href="http://robotx.org/images/files/2016-MRC-Tasks-2016-11-28.pdf">here</a>.</em></aside>
+			</div>
+		</div>
+		<div id="footer">
+		</div>
+	</body>
+
+</html>

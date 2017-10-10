@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<title>UW Robot X</title>
+		<meta name="description" content="">
+		<meta name="author" content="">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<link href="//fonts.googleapis.com/css?family=Source+Serif+Pro|Nunito+Sans:200,300,400" rel="stylesheet" type="text/css">
+
+		<link rel="stylesheet" href="/lib/css/normalize.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+		<link rel="stylesheet" href="/css/index.css">
+
+		<link rel="icon" type="image/png" href="/images/favicon.png">
+
+	</head>
+
+	<body>
+		<!-- Begin Navbar -->
+		<div id="top-nav-wrapper">
+			<script type="text/javascript">
+				function mobileDisplayNav() {
+					var navbar = document.querySelector("nav");
+					if (navbar.className === "top-nav") {
+						navbar.className += " responsive";
+					} else {
+						navbar.className = "top-nav";
+					}
+				}
+			</script>
+			<nav class="top-nav" id="top-nav">
+				<!--			<div>-->
+				<a href="javascript:void(0);" class="icon" onclick="mobileDisplayNav()" style="z-index: 10;">&#9776;</a>
+				<a href="/index.html" id="home-link-nav">UWRX</a>
+				<div style="float: right">
+					<a href="/about.html">About</a>
+					<!--				<a href="#news">News</a>-->
+					<a href="/join.html">Join UW RobotX</a>
+				</div>
+				<!--			</div>-->
+			</nav>
+		</div>
+		<!-- End navbar -->
+
+		<div class="section" id="flagship">
+			<div id="flagship-bg"></div>
+			<h1>Design tomorrow, today.</h1>
+			<h2>University of Washington RobotX</h2>
+			<div class="container-fluid">
+				<div class="row">
+					<button type="button" class="btn btn-primary" onclick="window.location='/join.html'">Join Us</button>
+				</div>
+			</div>
+		</div>
+		<div class="section">
+			<div class="container">
+				<div class="row">
+					<h2 class="section-heading">Who We Are</h2>
+					<p>
+						We are a student-led team competing in the
+						<a href="https://www.robotx.org">AUVSI Maritime RobotX Challenge</a>. Our objective is to design and build an autonomous vehicle platform that can accomplish rigorous underwater, maritime, and aerial tasks.
+					</p>
+					<p>
+						Our team consists of students from the University of Washington in sunny Seattle, and is advised by Andy Stewart at the UW Applied Physics Laboratory.
+					</p>
+
+					<h2 class="section-heading">About RobotX</h2>
+					<p>
+						The goal of RobotX is to pique students' interest in robotics and provide a hands-on opportunity for students to learn more about challenges in developing robots. Students from different disciplines work together, starting with a barebones <a href="http://www.wam-v.com/">WAM-V surface vessel</a> and equipping it with the hardware and software to perform demanding real-world tasks without human assistance.
+					</p>
+					<p>
+						The biennial RobotX challenge was launched in 2012 by the U.S. Office of Naval Research (ONR), and the first challenge was hosted in Singapore in 2014. The 2018 challenge will be hosted in Honolulu, Hawaii from December 8-15.
+					</p>
+					<button onclick="window.location='/about.html'" class="btn btn-primary" id="about-more">
+						Learn more
+					</button>
+				</div>
+			</div>
+		</div>
+
+		<!-- Footer
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+		<div id="footer">
+		</div>
+	</body>
+
+</html>
